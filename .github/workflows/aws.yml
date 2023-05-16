@@ -40,8 +40,9 @@ jobs:
           ECR_REPOSITORY: test-api
           IMAGE_TAG: v0.0.1
         run: |
-          docker buildx build --platform=linux/amd64 -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker build -t test-api .
+          docker tag test-api:latest public.ecr.aws/g2p7o2a3/test-api:latest
+          docker push public.ecr.aws/g2p7o2a3/test-api:latest
 
       - name: Get current time
         uses: 1466587594/get-current-time@v2
