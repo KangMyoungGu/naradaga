@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "218417454195.dkr.ecr.ap-northeast-2.amazonaws.com/nrgd-api-mg:v0.0.1:latest",
+    "Name": "218417454195.dkr.ecr.ap-northeast-2.amazonaws.com/nrgd-api-mg:test-api:latest",
     "Update": "true"
   },
   "Ports": [
